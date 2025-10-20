@@ -1,81 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 1 - Rosalie Hughes</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-        }
-        nav {
-            background-color: #333;
-            display: flex;
-            justify-content: center;
-        }
-        nav a {
-            color: white;
-            padding: 1em;
-            text-decoration: none;
-            transition: background 0.3s;
-        }
-        nav a:hover {
-            background-color: #4CAF50;
-        }
-        .container {
-            padding: 2em;
-            max-width: 800px;
-            margin: auto;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project 1 - Rosalie Hughes</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- Shared hero section -->
+  <div class="hero">
     <header>
-        <h1>Project 1</h1>
-        <p>Rosalie Hughes</p>
+      <h1>Project 1</h1>
+      <p>Mechanical System Design & Prototyping</p>
     </header>
+  </div>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="project1.html">Project 1</a>
-        <a href="project2.html">Project 2</a>
-        <a href="project3.html">Project 3</a>
-    </nav>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="project1.html" class="active">Project 1</a>
+    <a href="project2.html">Project 2</a>
+    <a href="project3.html">Project 3</a>
+  </nav>
 
-    <div class="container">
-        <h2>Project Overview</h2>
-        <p>This project focuses on [brief summary here].</p>
+  <main class="container">
+    <h2>Project Overview</h2>
+    <p>
+      Project 1 focuses on the design, analysis, and prototyping of a mechanical
+      system. This page serves as the landing area for the three subprojects that
+      explore different stages of development.
+    </p>
 
-        <h3>My Role</h3>
-        <p>Describe your contribution or what you built here.</p>
+    <section class="subprojects">
+      <div class="subproject">
+        <h3>⚙️ Subproject 1A: Concept Design</h3>
+        <p>Conceptual modeling, CAD development, and design iteration.</p>
+        <a href="project1a.html" class="btn">View Subproject 1A →</a>
+      </div>
 
-        <h3>Technical Details</h3>
-        <p>Include details like design, materials, tools, or analysis used.</p>
+      <div class="subproject">
+        <h3>🧩 Subproject 1B: Simulation & Testing</h3>
+        <p>Stress analysis, materials evaluation, and performance validation.</p>
+        <a href="project1b.html" class="btn">View Subproject 1B →</a>
+      </div>
 
-        <h3>Images</h3>
-        <img src="images/project1-photo.jpg" alt="Project 1 Photo" style="width:100%; max-width:600px;">
-    </div>
+      <div class="subproject">
+        <h3>🔩 Subproject 1C: Final Assembly</h3>
+        <p>Integration, machining, and verification of the full system.</p>
+        <a href="project1c.html" class="btn">View Subproject 1C →</a>
+      </div>
+    </section>
+  </main>
 
-    <footer>
-        <p>&copy; 2025 Rosalie Hughes</p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 Rosalie Hughes</p>
+  </footer>
 </body>
 </html>
