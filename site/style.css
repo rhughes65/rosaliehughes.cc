@@ -1,41 +1,56 @@
-/* ----- HERO SECTION WITH BACKGROUND ----- */
-.hero {
-  background-image: url("image/thermal_vacuum_chamber.jpg"); /* Path to your image */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 280px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  border-bottom: 4px solid #c0c0c0;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+  color: #333;
 }
 
-/* Overlay tint for better text contrast */
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(28, 49, 68, 0.6); /* dark blue overlay */
-}
-
-/* Text styling inside the hero section */
-.hero header {
-  position: relative;
-  z-index: 1;
-  text-align: center;
+header {
+  background-color: #4caf50;
   color: white;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-  padding: 1em;
+  padding: 1.5em 0;
+  text-align: center;
 }
 
-.hero h1 {
-  font-size: 2.2em;
+nav {
+  text-align: center;
+  background: #f2f2f2;
+  padding: 0.5em 0;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 1em;
+  font-weight: bold;
+}
+
+nav a:hover,
+nav a.active {
+  color: #4caf50;
+}
+
+.container {
+  padding: 2em;
+  max-width: 800px;
+  margin: auto;
+}
+
+h1 {
   margin: 0;
 }
 
-.hero p {
-  font-size: 1.1em;
-  margin-top: 0.4em;
+.intro {
+  margin-bottom: 2em;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
