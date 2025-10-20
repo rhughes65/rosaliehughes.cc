@@ -1,0 +1,40 @@
+/* ----- HERO SECTION WITH BACKGROUND ----- */
+.hero {
+  background-image: url("images/thermal-vacuum-chamber.jpg"); /* ← your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-bottom: 4px solid #c0c0c0;
+}
+
+/* add a subtle overlay for text readability */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(28, 49, 68, 0.6); /* dark blue overlay */
+}
+
+/* header text on top of hero */
+.hero header {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-top: 0.5em;
+}
