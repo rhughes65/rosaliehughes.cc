@@ -1,6 +1,6 @@
 /* ----- HERO SECTION WITH BACKGROUND ----- */
 .hero {
-  background-image: url("images/thermal_vacuum_chamber.jpg"); /* Path to your image */
+  background-image: url("image/thermal_vacuum_chamber.jpg"); /* Path to your image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
