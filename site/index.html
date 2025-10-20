@@ -1,84 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rosalie Hughes - Mechanical Engineering Student</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 1em 0;
-            text-align: center;
-        }
-        nav {
-            background-color: #333;
-            display: flex;
-            justify-content: center;
-        }
-        nav a {
-            color: white;
-            padding: 1em;
-            text-decoration: none;
-            transition: background 0.3s;
-        }
-        nav a:hover {
-            background-color: #4CAF50;
-        }
-        .container {
-            padding: 2em;
-            max-width: 800px;
-            margin: auto;
-        }
-        h1 {
-            color: #4CAF50;
-        }
-        .intro {
-            margin-bottom: 2em;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rosalie Hughes - Mechanical Engineering Student</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Hero section with thermal vacuum chamber background -->
+  <div class="hero">
     <header>
-        <h1>Rosalie Hughes</h1>
-        <p>Mechanical Engineering Undergraduate Student</p>
+      <h1>Rosalie Hughes</h1>
+      <p>Mechanical Engineering Undergraduate Student</p>
     </header>
+  </div>
 
-    <!-- ✅ Navigation bar -->
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="project1.html">Project 1</a>
-        <a href="project2.html">Project 2</a>
-        <a href="project3.html">Project 3</a>
-    </nav>
+  <nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="project1.html">Project 1</a>
+    <a href="project2.html">Project 2</a>
+    <a href="project3.html">Project 3</a>
+  </nav>
 
-    <div class="container">
-        <section class="intro">
-            <h2>About Me</h2>
-            <p>Hello! My name is Rosalie Hughes and I am a junior in Mechanical Engineering at Colorado State University. 
-            I am a Rapid Prototyping Technician at the Rapid Prototyping Lab, and work on lots of cool projects.</p>
-        </section>
-    </div>
+  <main class="container">
+    <section class="intro">
+      <h2>About Me</h2>
+      <p>
+        Hello! My name is <strong>Rosalie Hughes</strong> and I am a junior in
+        Mechanical Engineering at Colorado State University. I currently work as
+        a <strong>Rapid Prototyping Technician</strong> in the Rapid Prototyping
+        Lab, where I design, fabricate, and test mechanical systems across a
+        variety of research and student projects.
+      </p>
+    </section>
 
-    <footer>
-        <p>&copy; 2025 Rosalie Hughes</p>
-    </footer>
+    <section class="projects-overview">
+      <h2>Featured Projects</h2>
+      <p>
+        Explore my ongoing and completed projects below — each includes detailed
+        design work, CAD modeling, and testing documentation.
+      </p>
+
+      <div class="subprojects">
+        <div class="subproject">
+          <h3>⚙️ Project 1</h3>
+          <p>
+            A multi-phase mechanical assembly project involving CAD design,
+            simulation, and final system integration.
+          </p>
+          <a href="project1.html" class="btn">View Project 1 →</a>
+        </div>
+
+        <div class="subproject">
+          <h3>🔧 Project 2</h3>
+          <p>
+            Experimental component testing and performance optimization under
+            dynamic loading conditions.
+          </p>
+          <a href="project2.html" class="btn">View Project 2 →</a>
+        </div>
+
+        <div class="subproject">
+          <h3>🧠 Project 3</h3>
+          <p>
+            A design innovation challenge focused on automation and mechanical
+            efficiency improvements.
+          </p>
+          <a href="project3.html" class="btn">View Project 3 →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Rosalie Hughes</p>
+  </footer>
 </body>
 </html>
-
